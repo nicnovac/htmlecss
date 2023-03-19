@@ -10,11 +10,14 @@
 @font-face {
     font-family: 'space';
     src: url('../font/space\ age.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root{
     --color1: #ffffff;
     --color2: #212121;
+    --color3: #840dc9;
 
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --font1: 'nasa';
@@ -24,5 +27,51 @@
 body{
     background-color: var(--color2);
     color: var(--color1);
+    font-family: var(--font1);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
     font-family: var(--font2);
+}
+
+span{
+    color: var(--color3);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: var(--font-padrao);
 }
