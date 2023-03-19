@@ -17,7 +17,7 @@
 :root{
     --color1: #ffffff;
     --color2: #212121;
-    --color3: #840dc9;
+    --color3: #2d56b2;
 
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --font1: 'nasa';
@@ -47,7 +47,27 @@ header{
 
 li{
     display: inline-block;
-    margin: 20px;
+    margin: 30px;
+}
+
+a{
+    color: var(--color1);
+}
+
+a:hover{
+    color: var(--color3);
+    transition: 0.4s all;
+}
+
+#signup-btn{
+    border: 2px solid var(--color3);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#signup-btn:hover{
+    background-color: var(--color3);
+    color: var(--color1);
 }
 
 h1{
@@ -61,7 +81,7 @@ main{
 }
 
 h2{
-    font-size: 56px;
+    font-size: 50px;
     line-height: 10px;
     font-family: var(--font2);
 }
@@ -72,6 +92,37 @@ span{
 
 p{
     line-height: 20px;
-    max-width: 500px;
+    max-width: 400px;
     font-family: var(--font-padrao);
+}
+
+img{
+    width: 650px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: var(--color3);
+    color: var(--color1);
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
 }
